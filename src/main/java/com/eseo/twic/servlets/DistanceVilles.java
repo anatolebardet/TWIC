@@ -32,5 +32,4 @@ public class DistanceVilles extends HttpServlet {
         request.setAttribute("distance", dist);
         this.doGet(request,response);
     }
-
 }
