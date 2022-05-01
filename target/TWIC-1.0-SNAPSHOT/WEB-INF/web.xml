@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <display-name>MolkkyV2</display-name>
+
+    <servlet>
+        <servlet-name>DistanceVilles</servlet-name>
+        <servlet-class>com.eseo.twic.servlets.DistanceVilles</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DistanceVilles</servlet-name>
+        <url-pattern>/distance</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AffichageVilles</servlet-name>
+        <servlet-class>com.eseo.twic.servlets.AffichageVilles</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AffichageVilles</servlet-name>
+        <url-pattern>/villes</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ModificationVille</servlet-name>
+        <url-pattern>/modification</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModificationVille</servlet-name>
+        <servlet-class>com.eseo.twic.servlets.ModificationVille</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Accueil</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Accueil</servlet-name>
+        <servlet-class>com.eseo.twic.servlets.Accueil</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>SuppressionVille</servlet-name>
+        <servlet-class>com.eseo.twic.servlets.SuppressionVille</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SuppressionVille</servlet-name>
+        <url-pattern>/suppression</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Meteo</servlet-name>
+        <servlet-class>com.eseo.twic.servlets.Meteo</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Meteo</servlet-name>
+        <url-pattern>/meteo</url-pattern>
+    </servlet-mapping>
+
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+        </jsp-property-group>
+    </jsp-config>
+
+</web-app>

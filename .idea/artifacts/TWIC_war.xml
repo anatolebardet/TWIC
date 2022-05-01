@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="TWIC:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>TWIC</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="TWIC-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="TWIC:war exploded" />
+    </root>
+  </artifact>
+</component>
